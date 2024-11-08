@@ -9,6 +9,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        "slow-appear": "appear 5s forwards",
+      },
+      keyframes: {
+        appear: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
