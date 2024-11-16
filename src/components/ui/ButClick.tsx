@@ -14,9 +14,11 @@ export default function ButClick() {
 
   return (
     <div className="flex flex-col items-center">
-      <Button onClick={buttonClick}>Нажми меня</Button>
+      <Button className="mt-4" onClick={buttonClick}>
+        Нажми меня
+      </Button>
       <div
-        className={`header text-red-700 ${currentStep} font-black items-center mt-2`}
+        className={`header text-red-700 ${currentStep} font-black items-center mt-4`}
       >
         Я ТЕБЯ ЛЮБЛЮ!
       </div>
