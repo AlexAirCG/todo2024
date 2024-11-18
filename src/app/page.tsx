@@ -1,6 +1,7 @@
 import ButClick from "@/components/ui/ButClick";
 import { CoursesList } from "@/features/courses-list/pub/courses-list";
 import { CreateCourseForm } from "@/features/courses-list/pub/create-course-form";
+import GameApp from "@/game/game";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <CreateCourseForm revalidatePagePath="/" className="mb-3" />
         <CoursesList revalidatePagePath="/" />
         <ButClick />
+        <GameApp />
       </main>
     </div>
   );
